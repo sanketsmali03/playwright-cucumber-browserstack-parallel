@@ -1,0 +1,23 @@
+{
+  "name": "playwright-bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
+    "report": "node reporter.js"
+  },
+  "author": "seethu",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^8.4.0",
+    "chai": "^4.3.6",
+    "cucumber-html-reporter": "^5.5.0",
+    "playwright": "1.23",
+    "prettier": "^2.7.1",
+    "cross-env": "7.0.3"
+  },
+  "devDependencies": {
+    "electron": "^19.0.9"
+  }
+}
