@@ -10,7 +10,7 @@ const addbasket = new Addbasket()
 
 Given('go to the baseUrl', {timeout: 60 * 1000},async function () {
 
-  await page.goto('https://checkout-api-devsite.vscommerce.co.uk/')
+  await page.goto('URL')
     //await addbasket.navigateToCheckoutPage()
 
 });
